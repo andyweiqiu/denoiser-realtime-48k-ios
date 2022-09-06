@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		1A46946A28C73E0700188DA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46946928C73E0700188DA4 /* AppDelegate.m */; };
 		1A46946D28C73E0700188DA4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46946C28C73E0700188DA4 /* SceneDelegate.m */; };
-		1A46947028C73E0700188DA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46946F28C73E0700188DA4 /* ViewController.m */; };
+		1A46947028C73E0700188DA4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1A46946F28C73E0700188DA4 /* ViewController.mm */; };
 		1A46947328C73E0700188DA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A46947128C73E0700188DA4 /* Main.storyboard */; };
 		1A46947528C73E0800188DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A46947428C73E0800188DA4 /* Assets.xcassets */; };
 		1A46947828C73E0800188DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A46947628C73E0800188DA4 /* LaunchScreen.storyboard */; };
 		1A46947B28C73E0800188DA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46947A28C73E0800188DA4 /* main.m */; };
+		1A46948328C74C1600188DA4 /* libDenoiserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A46948228C74C1600188DA4 /* libDenoiserSDK.a */; };
+		1A46948728C74D2100188DA4 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1A46948628C74D2000188DA4 /* test.wav */; };
+		1A46948A28C74EE500188DA4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A46948928C74EE500188DA4 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +26,17 @@
 		1A46946B28C73E0700188DA4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		1A46946C28C73E0700188DA4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		1A46946E28C73E0700188DA4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1A46946F28C73E0700188DA4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1A46946F28C73E0700188DA4 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		1A46947228C73E0700188DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A46947428C73E0800188DA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A46947728C73E0800188DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A46947928C73E0800188DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A46947A28C73E0800188DA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A46948228C74C1600188DA4 /* libDenoiserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDenoiserSDK.a; sourceTree = "<group>"; };
+		1A46948428C74C1F00188DA4 /* denoiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = denoiser.h; sourceTree = "<group>"; };
+		1A46948528C74C7B00188DA4 /* dr_wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dr_wav.h; sourceTree = "<group>"; };
+		1A46948628C74D2000188DA4 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
+		1A46948928C74EE500188DA4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A46948A28C74EE500188DA4 /* Accelerate.framework in Frameworks */,
+				1A46948328C74C1600188DA4 /* libDenoiserSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +57,7 @@
 			children = (
 				1A46946728C73E0700188DA4 /* denoiser_demo */,
 				1A46946628C73E0700188DA4 /* Products */,
+				1A46948828C74EE500188DA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,12 +72,15 @@
 		1A46946728C73E0700188DA4 /* denoiser_demo */ = {
 			isa = PBXGroup;
 			children = (
+				1A46948628C74D2000188DA4 /* test.wav */,
+				1A46948528C74C7B00188DA4 /* dr_wav.h */,
+				1A46948128C74BFB00188DA4 /* lib */,
 				1A46946828C73E0700188DA4 /* AppDelegate.h */,
 				1A46946928C73E0700188DA4 /* AppDelegate.m */,
 				1A46946B28C73E0700188DA4 /* SceneDelegate.h */,
 				1A46946C28C73E0700188DA4 /* SceneDelegate.m */,
 				1A46946E28C73E0700188DA4 /* ViewController.h */,
-				1A46946F28C73E0700188DA4 /* ViewController.m */,
+				1A46946F28C73E0700188DA4 /* ViewController.mm */,
 				1A46947128C73E0700188DA4 /* Main.storyboard */,
 				1A46947428C73E0800188DA4 /* Assets.xcassets */,
 				1A46947628C73E0800188DA4 /* LaunchScreen.storyboard */,
@@ -74,6 +88,23 @@
 				1A46947A28C73E0800188DA4 /* main.m */,
 			);
 			path = denoiser_demo;
+			sourceTree = "<group>";
+		};
+		1A46948128C74BFB00188DA4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1A46948428C74C1F00188DA4 /* denoiser.h */,
+				1A46948228C74C1600188DA4 /* libDenoiserSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		1A46948828C74EE500188DA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A46948928C74EE500188DA4 /* Accelerate.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +166,7 @@
 			files = (
 				1A46947828C73E0800188DA4 /* LaunchScreen.storyboard in Resources */,
 				1A46947528C73E0800188DA4 /* Assets.xcassets in Resources */,
+				1A46948728C74D2100188DA4 /* test.wav in Resources */,
 				1A46947328C73E0700188DA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A46947028C73E0700188DA4 /* ViewController.m in Sources */,
+				1A46947028C73E0700188DA4 /* ViewController.mm in Sources */,
 				1A46946A28C73E0700188DA4 /* AppDelegate.m in Sources */,
 				1A46947B28C73E0800188DA4 /* main.m in Sources */,
 				1A46946D28C73E0700188DA4 /* SceneDelegate.m in Sources */,
@@ -226,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -305,6 +337,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/denoiser_demo/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuwei.denoiser-demo";
@@ -332,6 +368,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/denoiser_demo/lib",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qiuwei.denoiser-demo";
