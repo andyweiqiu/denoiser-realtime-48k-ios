@@ -18,7 +18,7 @@ float *wavRead_scalar(const char *filename, unsigned int *sampleRate, drwav_uint
     if (buffer == nullptr) {
         printf("read wav file faild !");
     }
-    //仅仅处理单通道音频
+    
     if (channels != 1) {
         drwav_free(buffer, NULL);
         buffer = nullptr;
