@@ -10,9 +10,19 @@
 
 #include <stdio.h>
 
-#endif /* denoiser_h */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void* NSCreate(int sample_rate);
 void NSProcess(void* denoiser, float* audio_in, int frame_size, float* audio_out);
 void NSDestroy(void* denoiser);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* denoiser_h */
+
+
+
