@@ -14,9 +14,9 @@
 		1A46947528C73E0800188DA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A46947428C73E0800188DA4 /* Assets.xcassets */; };
 		1A46947828C73E0800188DA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A46947628C73E0800188DA4 /* LaunchScreen.storyboard */; };
 		1A46947B28C73E0800188DA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A46947A28C73E0800188DA4 /* main.m */; };
-		1A46948328C74C1600188DA4 /* libDenoiserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A46948228C74C1600188DA4 /* libDenoiserSDK.a */; };
 		1A46948728C74D2100188DA4 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1A46948628C74D2000188DA4 /* test.wav */; };
 		1A46948A28C74EE500188DA4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A46948928C74EE500188DA4 /* Accelerate.framework */; };
+		1A46951628D1CD9F00188DA4 /* libDenoiserSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A46951528D1CD9F00188DA4 /* libDenoiserSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,11 +32,11 @@
 		1A46947728C73E0800188DA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A46947928C73E0800188DA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A46947A28C73E0800188DA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A46948228C74C1600188DA4 /* libDenoiserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDenoiserSDK.a; sourceTree = "<group>"; };
 		1A46948428C74C1F00188DA4 /* denoiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = denoiser.h; sourceTree = "<group>"; };
 		1A46948528C74C7B00188DA4 /* dr_wav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dr_wav.h; sourceTree = "<group>"; };
 		1A46948628C74D2000188DA4 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
 		1A46948928C74EE500188DA4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1A46951528D1CD9F00188DA4 /* libDenoiserSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDenoiserSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A46948A28C74EE500188DA4 /* Accelerate.framework in Frameworks */,
-				1A46948328C74C1600188DA4 /* libDenoiserSDK.a in Frameworks */,
+				1A46951628D1CD9F00188DA4 /* libDenoiserSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,8 +93,8 @@
 		1A46948128C74BFB00188DA4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				1A46951528D1CD9F00188DA4 /* libDenoiserSDK.a */,
 				1A46948428C74C1F00188DA4 /* denoiser.h */,
-				1A46948228C74C1600188DA4 /* libDenoiserSDK.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
