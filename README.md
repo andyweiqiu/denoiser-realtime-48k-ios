@@ -9,5 +9,3 @@ The project is a real-time processing of noise reduction at a 48K sampling rate
 * Output the time taken to process each frame of audio
 
 Still in the process of further optimization...
-
-reference https://github.com/Rikorose/DeepFilterNet
